@@ -11,18 +11,18 @@
 </head>
 <body>
     <div class="w3-top">
-        <div class="w3-row w3-large w3-light-grey">
+        <div class="w3-row w3-large">
           <div class="w3-col s3">
-            <a href="#" class="w3-button w3-block">Home</a>
+            <a href="#" class="w3-button w3-block w3-hover-opacity" style="color: black;font-size: 25px;">Home</a>
           </div>
           <div class="w3-col s3">
-            <a href="#plans" class="w3-button w3-block">Plans</a>
+            <a href="#plans" class="w3-button w3-block w3-hover-opacity" style="color: black;font-size: 25px;">Plans</a>
           </div>
           <div class="w3-col s3">
-            <a href="#about" class="w3-button w3-block">About</a>
+            <a href="#about" class="w3-button w3-block w3-hover-opacity" style="color: black;font-size: 25px;">About</a>
           </div>
           <div class="w3-col s3">
-            <a href="#contact" class="w3-button w3-block">Contact</a>
+            <a href="#contact" class="w3-button w3-block w3-hover-opacity" style="color: black;font-size: 25px;">Contact</a>
           </div>
         </div>
     </div>
@@ -38,13 +38,13 @@
 
         <!-- Logo -->
         <div class="w3-container">
-            <img src="Images/Plutus_logo.png" style="width:30%">
+            <img src="Images/logo2.png" style="width:30%">
         </div>
 
         <!-- Grid -->
         <div class="w3-row w3-container">
             <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+                <span class="w3-xlarge w3-bottombar w3-border-black w3-padding-16">What We Offer</span>
             </div>
             <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
                 <h3>Design</h3>
@@ -68,17 +68,50 @@
         </div>
 
         <!-- Grid -->
+        <div class="w3-row-padding" id="plans">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-black w3-padding-16">Plans</span>
+            </div>
+
+            <div class="w3-container w3-white w3-margin-bottom">
+                <h2 style="background-color: #f5f5f5;">Fraudulent Card Detection</h2>
+                <h3>Context</h3>
+                <p>
+                    Credit card fraud costs consumers and the financial company billions of dollars annually, and fraudsters 
+                    continuously try to find new rules and tactics to commit illegal actions. Thus, fraud detection systems have 
+                    become essential for banks and financial institution, to minimize their losses.
+                </p>
+                <h3>Content</h3>
+                <p>
+                    The datasets contains transactions made by credit cards in September 2013 by european cardholders.
+                    This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions.
+                    The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+                </p>
+                <p>
+                    It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to 
+                    confidentiality issues, we cannot provide the original features and more background information about the data. 
+                    Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. 
+                    Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the 
+                    transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it 
+                    takes value 1 in case of fraud and 0 otherwise.
+                </p>
+            </div>
+
+            
+        </div>
+
+        <!-- Grid -->
         <div class="w3-row-padding" id="about">
             <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+                <span class="w3-xlarge w3-bottombar w3-border-black w3-padding-16">Who We Are</span>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4">
-                    <img src="Images/pic_satyaki.jpg" alt="Satyaki Biswas" style="width:100%">
+                <div class="w3-card-4 w3-white">
+                    <img src="Images/pic_satyaki2.jpg" alt="Satyaki Biswas" style="width:100%">
                     <div class="w3-container">
                         <h3>Satyaki Biswas</h3>
-                        <p class="w3-opacity">CEO & Founder</p>
+                        <p class="w3-opacity">Chief Executive Officer</p>
                         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                         <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
                     </div>
@@ -86,11 +119,11 @@
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4">
-                    <img src="Images/pic_akhil.jpg" alt="Akhil Kumar" style="width:75.3%">
+                <div class="w3-card-4 w3-white">
+                    <img src="Images/pic_akhil.jpg" alt="Akhil Kumar" style="width:100%">
                     <div class="w3-container">
                         <h3>Akhil Kumar</h3>
-                        <p class="w3-opacity">Finance Head</p>
+                        <p class="w3-opacity">Director Legal</p>
                         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                         <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
                     </div>
@@ -98,22 +131,95 @@
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4">
+                <div class="w3-card-4 w3-white">
                     <img src="Images/pic_tan.jpg" alt="Tanishq Agarwal" style="width:100%">
                     <div class="w3-container">
                         <h3>Tanishq Agarwal</h3>
-                        <p class="w3-opacity">Web Head</p>
+                        <p class="w3-opacity">Chief Technology Officer</p>
                         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
                         <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
                     </div>
                 </div>
             </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="Images/pic_ater.jpg" alt="Ater Murtem" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Ater Murtem</h3>
+                        <p class="w3-opacity">Director Marketing</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="Images/pic_niladri.jpg" alt="Niladri Biswas" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Niladri Biswas</h3>
+                        <p class="w3-opacity">Chief Technology Officer</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="Images/pic_ravi.jpeg" alt="Ravi Prakash Meena" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Ravi Prakash Meena</h3>
+                        <p class="w3-opacity">Chief Financial Officer</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="Images/pic_ankit.jpg" alt="Ankit Raj" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Ankit Raj</h3>
+                        <p class="w3-opacity">Chief Financial Officer</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="Images/pic_gaurav.JPG" alt="Gaurav Gurjar" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Gaurav Gurjar</h3>
+                        <p class="w3-opacity">Director of Research and Development</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4 w3-white">
+                    <img src="Images/pic_muskaan.png" alt="Muskaan Loura" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Muskaan Loura</h3>
+                        <p class="w3-opacity">Director of Research and Development</p>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
     </div>
     <!-- Footer -->
 
-    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <footer class="w3-container w3-padding-32 w3-center">
         
         <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
@@ -124,7 +230,7 @@
             <i class="fa fa-twitter w3-hover-opacity"></i>
             <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
-        <p>Copyright © 2020 Plutus Inc. All rights reserved</p>
+        <p>Copyright © 2020 Plutus Inc. All rights reserved.</p>
     </footer>
   
 </body>
