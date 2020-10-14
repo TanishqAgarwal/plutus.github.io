@@ -10,20 +10,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="Images/logo2.png" type="image/icon type">
 </head>
-<body>
-    <div class="w3-top">
+<body onload="myFunction()">
+    <div id="loading"></div>
+
+
+    <div class="w3-animate-top" style="animation-duration: 1s;">
         <div class="w3-row w3-large">
           <div class="w3-col s3">
-            <a href="#" class="w3-button w3-block w3-hover-opacity" style="color: black;font-size: 25px;">Home</a>
+            <a href="#" class="w3-button w3-block w3-hover-opacity" style="color: #edb887;font-size: 25px;transition: 0.7s;">Home</a>
           </div>
           <div class="w3-col s3">
-            <a href="#plans" class="w3-button w3-block w3-hover-opacity" style="color: black;font-size: 25px;">Plans</a>
+            <a href="#plans" class="w3-button w3-block w3-hover-opacity" style="color: #edb887;font-size: 25px;transition: 0.7s;">Plans</a>
           </div>
           <div class="w3-col s3">
-            <a href="#about" class="w3-button w3-block w3-hover-opacity" style="color: black;font-size: 25px;">About</a>
+            <a href="#about" class="w3-button w3-block w3-hover-opacity" style="color: #edb887;font-size: 25px;transition: 0.7s;">About</a>
           </div>
           <div class="w3-col s3">
-            <a href="#contact" class="w3-button w3-block w3-hover-opacity" style="color: black;font-size: 25px;">Contact</a>
+            <a href="#contact" class="w3-button w3-block w3-hover-opacity" style="color: #edb887;font-size: 25px;transition: 0.7s;">Contact</a>
           </div>
         </div>
     </div>
@@ -38,179 +41,210 @@
         -->
 
         <!-- Logo -->
-        <div class="w3-container">
+        <div class="w3-container w3-animate-zoom" style="animation-duration: 2s;">
             <img src="Images/logo2.png" style="width:30%">
         </div>
 
         <!-- Grid -->
-        <div class="w3-row w3-container">
+        <div class="w3-row w3-container w3-animate-bottom" style="animation-duration: 2s;">
             <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-black w3-padding-16">What We Offer</span>
+                <br><br>
+                <span class="w3-xlarge w3-padding-16" style="color:#edb887;border-bottom: 5px solid #ffe5c9;">What We Offer</span>
             </div>
-            <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-                <h3>Design</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            </div>
-
-            <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-                <h3>Branding</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <div class="w3-col l3 m6 w3-container w3-padding-16" style="background-color: #ffedd9;color: #b36200;">
+                <h3 style="color: #7a4605;">Design</h3>
+                <p>We are trying to predict the compressive strength of concrete using Artificial Neural Networks and 
+                   try to improve the accuracy by using advanced ML techniques.</p>
             </div>
 
-            <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-                <h3>Consultation</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <div class="w3-col l3 w3-container w3-padding-16" style="background-color: #fce3c7;color: #b36200;">
+                <h3 style="color: #7a4605;">Branding</h3>
+                <p>We come up with optimal solutions for your problems in Civil Engineering using various advanced Machine Learning 
+                    techniques.
+                    <br>
+                    <br>
+                </p>
             </div>
 
-            <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-                <h3>Promises</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <div class="w3-col l3 m6 w3-container w3-padding-16" style="background-color: #ffedd9;color: #b36200;">
+                <h3 style="color: #7a4605;">Consultation</h3>
+                <p>We have a consultation team which is part of various communities so that we can get the best 
+                    solutions for your problem from the experts across the globe.
+                </p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-container w3-padding-16" style="background-color: #fce3c7;color: #b36200;">
+                <h3 style="color: #7a4605;">Promises</h3>
+                <p>No one can provide a solution more optimal than us.</p>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
         </div>
 
         <!-- Grid -->
-        <div class="w3-row-padding" id="plans">
+        <div class="w3-row-padding w3-animate-right" id="plans" style="animation-duration: 2s;">
             <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-black w3-padding-16">Plans</span>
+                <span class="w3-xlarge w3-padding-16" style="color: #7a4605;border-bottom: 5px solid #7a4605;">Plans</span>
             </div>
 
-            <div class="w3-container w3-white w3-margin-bottom">
-                <h2 style="background-color: #f5f5f5;">Fraudulent Card Detection</h2>
-                <h3>Context</h3>
+            <div class="w3-container w3-margin-bottom" style="background-color: #ffedd9;color: #b36200;">
+                <h2 style="background-color: #fce3c7;color: #7a4605;">Fraudulent Card Detection</h2>
+                <h3 style="color: #7a4605;">Context</h3>
                 <p>
                     Credit card fraud costs consumers and the financial company billions of dollars annually, and fraudsters 
                     continuously try to find new rules and tactics to commit illegal actions. Thus, fraud detection systems have 
                     become essential for banks and financial institution, to minimize their losses.
                 </p>
-                <h3>Content</h3>
+                <h3 style="color: #7a4605;">Content</h3>
                 <p>
-                   The datasets contains transactions made by credit cards in 2019 from our finance department.
-                   This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. 
-                   The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+                    The datasets contains transactions made by credit cards in 2019 from our finance department.
+                    This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions.
+                    The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
                 </p>
                 <p>
-                   It contains only numerical input variables which are the result of a PCA transformation.
-                   Unfortunately, due to confidentiality issues, we cannot provide the original features and more background information about the data. 
-                   Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. 
-                   Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the 
-                   transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes
-                   value 1 in case of fraud and 0 otherwise.
-                </p> 
+                    It contains only numerical input variables which are the result of a PCA transformation.
+                    Unfortunately, due to confidentiality issues, we cannot provide the original features and more background 
+                    information about the data. Features V1, V2, … V28 are the principal components obtained with PCA, the only
+                    features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds 
+                    elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction 
+                    Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable
+                    and it takes value 1 in case of fraud and 0 otherwise.
+                </p>
             </div>
 
             
         </div>
 
         <!-- Grid -->
-        <div class="w3-row-padding" id="about">
+        <div class="w3-row-padding w3-animate-left" id="about" style="margin: 0px;padding: 0px; background-color: #ffedd9; width: 100%; animation-duration: 2s;">
             <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-black w3-padding-16">Who We Are</span>
+                <span class="w3-xlarge w3-padding-16" style="color: #7a4605;border-bottom: 5px solid #7a4605;">Who We Are</span>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4 w3-white">
+                <div class="w3-card-4" style="background-color: #fff5e6;">
                     <img src="Images/pic_satyaki2.jpg" alt="Satyaki Biswas" style="width:100%">
                     <div class="w3-container">
                         <h3>Satyaki Biswas</h3>
                         <p class="w3-opacity">Chief Executive Officer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                        
+                        <a href="https://www.facebook.com/satyaki.biswas.351" class="w3-xlarge"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="https://www.instagram.com/_._satyaki_._/" class="w3-xlarge"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="https://www.linkedin.com/in/satyaki-biswas-a04b5b1a6/" class="w3-xlarge"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4 w3-white">
+                <div class="w3-card-4" style="background-color: #fff5e6;">
                     <img src="Images/pic_akhil.jpg" alt="Akhil Kumar" style="width:100%">
                     <div class="w3-container">
                         <h3>Akhil Kumar</h3>
                         <p class="w3-opacity">Director Legal</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                        
+                        <a href="https://www.facebook.com/profile.php?id=100013880390407" class="w3-xlarge"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="https://www.instagram.com/akhil_kumar2600/" class="w3-xlarge"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="#" class="w3-xlarge"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4 w3-white">
+                <div class="w3-card-4" style="background-color: #fff5e6;">
                     <img src="Images/pic_tan.jpg" alt="Tanishq Agarwal" style="width:100%">
                     <div class="w3-container">
                         <h3>Tanishq Agarwal</h3>
                         <p class="w3-opacity">Chief Technology Officer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                        
+                        <a href="https://www.facebook.com/tanishq.agarwal.50" class="w3-xlarge"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="https://www.instagram.com/sin_by_cos.ishq/" class="w3-xlarge"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="https://www.linkedin.com/in/tanishq-agarwal-01a8881a0/" class="w3-xlarge"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4 w3-white">
+                <div class="w3-card-4" style="background-color: #fff5e6;">
                     <img src="Images/pic_ater.jpg" alt="Ater Murtem" style="width:100%">
                     <div class="w3-container">
                         <h3>Ater Murtem</h3>
                         <p class="w3-opacity">Director Marketing</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                        
+                        <a href="https://www.facebook.com/ater.murtem.3" class="w3-xlarge"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="https://www.instagram.com/ater_murtem/" class="w3-xlarge"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="#" class="w3-xlarge"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4 w3-white">
+                <div class="w3-card-4" style="background-color: #fff5e6;">
                     <img src="Images/pic_niladri.jpg" alt="Niladri Biswas" style="width:100%">
                     <div class="w3-container">
                         <h3>Niladri Biswas</h3>
                         <p class="w3-opacity">Chief Technology Officer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                        
+                        <a href="https://www.facebook.com/niladri.biswas.7311352" class="w3-xlarge"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="#" class="w3-xlarge"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="https://www.linkedin.com/in/niladri-biswas-831088192/" class="w3-xlarge"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4 w3-white">
+                <div class="w3-card-4" style="background-color: #fff5e6;">
                     <img src="Images/pic_ravi.jpeg" alt="Ravi Prakash Meena" style="width:100%">
                     <div class="w3-container">
                         <h3>Ravi Prakash Meena</h3>
                         <p class="w3-opacity">Chief Financial Officer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                        
+                        <a href="https://www.facebook.com/raviprakash.meena5072002" class="w3-xlarge"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="https://www.instagram.com/raviprakash.meena507/" class="w3-xlarge"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="https://www.linkedin.com/in/ravi-prakash-meena-554403195/" class="w3-xlarge"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4 w3-white">
+                <div class="w3-card-4" style="background-color: #fff5e6;">
                     <img src="Images/pic_ankit.jpg" alt="Ankit Raj" style="width:100%">
                     <div class="w3-container">
                         <h3>Ankit Raj</h3>
                         <p class="w3-opacity">Chief Financial Officer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                        
+                        <a href="https://www.facebook.com/profile.php?id=100039601611665" class="w3-xlarge"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="#" class="w3-xlarge"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="#" class="w3-xlarge"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4 w3-white">
+                <div class="w3-card-4" style="background-color: #fff5e6;">
                     <img src="Images/pic_gaurav.JPG" alt="Gaurav Gurjar" style="width:100%">
                     <div class="w3-container">
                         <h3>Gaurav Gurjar</h3>
                         <p class="w3-opacity">Director of Research and Development</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                        
+                        <a href="https://www.facebook.com/profile.php?id=100039690489413" class="w3-xlarge"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="https://www.instagram.com/gaurav_1272/" class="w3-xlarge"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="#" class="w3-xlarge"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                     </div>
                 </div>
             </div>
 
             <div class="w3-third w3-margin-bottom">
-                <div class="w3-card-4 w3-white">
+                <div class="w3-card-4" style="background-color: #fff5e6;">
                     <img src="Images/pic_muskaan.png" alt="Muskaan Loura" style="width:100%">
                     <div class="w3-container">
                         <h3>Muskaan Loura</h3>
                         <p class="w3-opacity">Director of Research and Development</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                        
+                        <a href="https://www.facebook.com/muskaan.loura.5" class="w3-xlarge"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="https://www.instagram.com/muskaanloura/" class="w3-xlarge"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="https://www.linkedin.com/in/muskaan-loura-2b0437191/" class="w3-xlarge"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                     </div>
                 </div>
             </div>
@@ -234,5 +268,14 @@
         <p>Copyright © 2020 Plutus Inc. All rights reserved.</p>
     </footer>
   
+
+    <script>
+        var preloader = document.getElementById('loading');
+
+        function myFunction()
+        {
+            preloader.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
