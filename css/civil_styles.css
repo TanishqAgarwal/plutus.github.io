@@ -1,8 +1,10 @@
-html,body,h1,h2,h3,h4 {font-family: 'Varela Round', sans-serif;}
+html,body,h1,h2,h3,h4 {font-family: 'Baloo Tammudu 2', cursive;}
 .mySlides {display:none}
 .w3-tag, .fa {cursor:pointer}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
-
+*{
+    font-family: 'Asap', sans-serif;
+}
 #loading{
     position: fixed;
     width: 100%;
@@ -17,11 +19,55 @@ html{
 
 body{
     background: url('../Images/abstract-7680x4320-3d-colorful-pearls-8k-21271.jpg');
-    background-color: #ffdeba;
+    background-color: #FFFFFF;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
     background-position-y: -25px;
     background-position-x: -5px;
     
+}
+
+.brochure{
+    width: 500px;
+    height: 650px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url('../Images/front.jpg');
+    background-size: 100% 100%;
+    animation: slider 40s infinite ease-out;
+}
+
+@keyframes slider{
+    0%{ background-image: url(../Images/front.png); }
+    15%{ background-image: url(../Images/front.png); }
+    20%{ background-image: url(../Images/inside1.png); }
+    35%{ background-image: url(../Images/inside1.png); }
+    40%{ background-image: url(../Images/inside2.png); }
+    55%{ background-image: url(../Images/inside2.png); }
+    60%{ background-image: url(../Images/last.png); }
+    85%{ background-image: url(../Images/last.png); }
+    90%{ background-image: url(../Images/front.png); }
+    100%{ background-image: url(../Images/front.png); }
+}
+
+.profile-image:hover{
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.profile-image-overlay{
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.profile-image-overlay:hover{
+    opacity: 1;
 }
